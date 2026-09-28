@@ -1,0 +1,8 @@
+.env
+# Assessment brief contains plaintext test credentials
+IT_Coding_Assessment_*.html
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+dist/

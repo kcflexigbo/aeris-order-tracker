@@ -1,0 +1,71 @@
+{
+  "orders": [
+    {
+      "order_no": "PO-20251130-00072",
+      "order_date": "30/11/25",
+      "status": "Completed",
+      "company": "V22 Dispensary",
+      "customer_name": "Jason Hu",
+      "phone": "0481 735 488",
+      "email": "Jason@aerishealth.au",
+      "address": "125 Toorak Road, South Yarra VIC 3141"
+    },
+    {
+      "order_no": "PO-20251203-00046",
+      "order_date": "03/12/25",
+      "status": "In Transit",
+      "company": "Cann Life Dispensary",
+      "customer_name": "Bella Dari",
+      "phone": "0411 547 288",
+      "email": "Bella@aerishealth.au",
+      "address": "381 Smith Street, Fitzroy VIC 3065"
+    },
+    {
+      "order_no": "PO-TEST-0001",
+      "order_date": "15/09/26",
+      "status": "Processing",
+      "company": "Test Harbour Pharmacy (fictitious)",
+      "customer_name": "Test Customer A",
+      "phone": "0400 000 001",
+      "email": "test-a@example.com",
+      "address": "1 Test Street, Brisbane City QLD 4000"
+    },
+    {
+      "order_no": "PO-TEST-0002",
+      "order_date": "20/09/26",
+      "status": "In Transit",
+      "company": "Test Westside Clinic (fictitious)",
+      "customer_name": "Test Customer B",
+      "phone": "0400 000 002",
+      "email": "test-b@example.com",
+      "address": "2 Example Avenue, Perth WA 6000"
+    }
+  ],
+  "order_lines": [
+    { "sku": "TBAMET10",  "quantity": 3,  "assigned_tracking": "Track 1", "order_no": "PO-20251130-00072" },
+    { "sku": "TBAMET28",  "quantity": 1,  "assigned_tracking": "Track 1", "order_no": "PO-20251130-00072" },
+    { "sku": "TBOPAL28",  "quantity": 1,  "assigned_tracking": "Track 1", "order_no": "PO-20251130-00072" },
+    { "sku": "AURPUR10",  "quantity": 10, "assigned_tracking": "Track 2", "order_no": "PO-20251203-00046" },
+    { "sku": "HARNIG",    "quantity": 4,  "assigned_tracking": "Track 1", "order_no": "PO-20251130-00072" },
+    { "sku": "LELCBD100", "quantity": 6,  "assigned_tracking": "Track 1", "order_no": "PO-20251130-00072" },
+    { "sku": "HALGEO15",  "quantity": 1,  "assigned_tracking": "Track 3", "order_no": "PO-20251203-00046" },
+    { "sku": "MCMW10",    "quantity": 2,  "assigned_tracking": "Track 3", "order_no": "PO-20251203-00046" },
+    { "sku": "MCBO30",    "quantity": 3,  "assigned_tracking": "Track 3", "order_no": "PO-20251203-00046" },
+
+    { "sku": "MCBO30",    "quantity": 2,  "assigned_tracking": "Track 4", "order_no": "PO-TEST-0001" },
+    { "sku": "NOTASKU99", "quantity": 1,  "assigned_tracking": "Track 4", "order_no": "PO-TEST-0001" },
+    { "sku": " tbamet10 ", "quantity": 0, "assigned_tracking": "Track 4", "order_no": "PO-TEST-0001" },
+
+    { "sku": "HALGEO15",  "quantity": 5,  "assigned_tracking": "Track 5", "order_no": "PO-TEST-0002" },
+    { "sku": "LELCBD100", "quantity": "two", "assigned_tracking": "Track 5", "order_no": "PO-TEST-0002" },
+    { "sku": "HARNIG",    "quantity": 2,  "assigned_tracking": "Track 6", "order_no": "PO-TEST-0002" }
+  ],
+  "tracking": [
+    { "assigned_tracking": "Track 1", "tracking_no": "2FWZ50008569", "logistics_company": "StarTrack/Auspost" },
+    { "assigned_tracking": "Track 2", "tracking_no": "2FWZ50008645", "logistics_company": "StarTrack/Auspost" },
+    { "assigned_tracking": "Track 3", "tracking_no": "305506914",    "logistics_company": "TNT" },
+    { "assigned_tracking": "Track 4", "tracking_no": "RBXZ50016112", "logistics_company": "StarTrack/Auspost" },
+    { "assigned_tracking": "Track 5", "tracking_no": "2FWZ50020500", "logistics_company": "StarTrack/Auspost" },
+    { "assigned_tracking": "Track 6", "tracking_no": "BAD#CONNOTE",  "logistics_company": "TNT" }
+  ]
+}
